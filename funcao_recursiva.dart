@@ -12,7 +12,7 @@ void main(){
   print(retornaFatorial(5));
 
 
-  //Uso de caso-base com caso recursivo.
+  //Uso de caso recursivo com caso-base sendo uma array vazia.
  int funcaoSoma(List<int> lista, int somaProvisoria){
     int somaTotal = somaProvisoria;
     int ultimoNumeroLista = lista.removeLast();
