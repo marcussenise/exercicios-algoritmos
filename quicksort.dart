@@ -1,6 +1,6 @@
 void main() {
   //Quicksort separa no pivô os elementos menores, que ficam
-  //em um subarray à esquerda, e os elementos maiors, que ficam em um
+  //em um subarray à esquerda, e os elementos maiores, que ficam em um
   // subarray à direita.
   //Após isso, usamos recursão em cada subarray.
   List<int> quicksort(List<int> lista) {

@@ -1,3 +1,4 @@
+
 // import 'dart:collection';
 // import 'dart:math';
 
@@ -7,15 +8,15 @@
 
   //Aqui na verdade nosso Array criado será de LinkedLists. 
   //Cada linkedList armazenará os seus Map<String, dynamic>.
-  // List<Map<String, dynamic>> listaTelefonica = [];
+   //List<Map<String, dynamic>> listaTelefonica = [];
+   List<String> listaTelefonica = [];
 
   //   int funcaoHash(String entrada){  
 
       //A função hash deve ter conhecimento do tamanho do array.
-      //Aqui vai a função que vai hashear a String
       //Podemos utilizar por ex o primeiro caractere da String como índice para hashear
       
-      //ex: int indice = hashearStringPorOrdemAlfabetica(entrada)
+      //ex: int indice = hashearStringPorOrdemAlfabetica(entrada[0])
       
       //nesse caso, cada espaço do array será para uma letra do alfabeto
       //podemos decidir a melhor função para hashear de acordo com a String 
@@ -24,7 +25,7 @@
       //return indice;
 //   }
 
-//   void addEntrada(String entrada, dynamic valor){
+//   void addEntrada(String entrada, String valor){
 //     if(listaTelefonica.isNotEmpty){
 //       listaTelefonica.forEach((element) {
 //         //  Pra evitar duplicatas checamos em cada Map da LinkedList que está no array
@@ -36,11 +37,16 @@
 //           Map<String, dynamic> mapa = Map();
 //           mapa[entrada] = valor;
 //           listaTelefonica.insert(indice, mapa);
-
 //         }
     
 //     });
 //   }}
 
-//   addEntrada('marcus', 61999329021);
+      lerValor(String entrada){
+        //Exemplo de busca em um Array
+        return listaTelefonica[listaTelefonica.indexOf(entrada)];
+      }
+
+
+//   addEntrada('marcus', '61999329021');
 // }
